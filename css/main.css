@@ -1,6 +1,5 @@
 .j-firstSlider {
 	position: relative;
-
 	height: 100vh;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -46,40 +45,48 @@
 }
 
 .lang_item a {
-	font-family: sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	color: #fff;
 	text-decoration: none;
 }
 
 .logo {
-	font-family: sans-serif;
 	display: inline-block;
-	font-size: 14px;
+	font-size: 16px;
 	color: #fff;
 	text-decoration: none;
 	font-style: italic;
 }
 
 .work {
-	font-family: sans-serif;
 	display: inline-block;
 	margin-right: 50px;
-	font-size: 14px;
+	font-size: 16px;
 	color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
 }
 
 .btn {
-	font-family: sans-serif;
 	display: inline-block;
-	padding: 9px;
+	padding: 10px;
 	border: 1px solid;
-	font-size: 14px;
+	font-size: 16px;
 	color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
+}
+
+.lang_item a:hover,
+.logo:hover,
+.work:hover {
+	transition: .3s;
+	color: dodgerblue;
+}
+
+.btn:hover {
+	border-color: dodgerblue;
+	background-color: dodgerblue;
 }
 
 .left {
@@ -93,7 +100,8 @@
 /*------------------- employees -----------------------*/
 .employees_wrapper {
 	position: relative;
-	top: 65px;
+	top: 0;
+	bottom: 0;
 	padding-top: 65px;
 	padding-bottom: 55px;
 	background-color: white;
@@ -101,27 +109,28 @@
 
 .text {
 	padding-right: 50px;
-	font-family: sans-serif;
 	float: left;
-	font-size: 26px;
 	width: 70%;
 }
 
 .text_title {
+	font-weight: 700;
+	font-size: 36px;
 	margin-top: 0px;
 	margin-bottom: 50px;
 	text-transform: uppercase; 
 }
 
 .text_first {
+	font-size: 30px;
 	margin-top: 0px;
 	margin-bottom: 50px;
 	font-style: italic;
 }
 
 .text_second{
-	margin: 0px;
-	font-weight: 700;
+	font-size: 30px;
+    font-weight: bold;
 }
 
 .employees {
@@ -144,31 +153,29 @@ img {
 
 .content_baner {
 	position: relative;
-	top: 100px;
 	background-repeat: no-repeat;
 	background-size: cover;	
 }
 
 .content_baner_logo {
-	z-index: 5;
 	position: absolute;
 	width: 100%;
-	height: 25px;
+	height: 70px;
 	top: 0;
 	bottom: 0;
 	margin: auto;
 	text-align: center;
 	text-transform: uppercase;
 	color: #ffffff;
+	font-size: 48px;
 }
 
 .content_baner_btn {
 	position: absolute;
-	z-index: 5;
 	left: 0;
 	right: 0;
 	margin: auto;
-	bottom: 80px;
+	bottom: 88px;
 	width: 212px;
 	text-align: center;
 }
@@ -176,7 +183,6 @@ img {
 /*------------------- foter -----------------------*/
 .footer {
 	position: relative;
-	top: 53px;
 	padding: 15px 0;
 	background-color: #000;
 }
@@ -184,15 +190,15 @@ img {
 .footer_item {
 	width: 25%;
 	float: left;
-	font-size: 14px;
-}
-
-.footer_item a{
-	color: #fff;
+	font-size: 12px;
 }
 
 .logo_color {
-	color: #fafafa;
+	display: inline-block;
+	font-size: 12px;
+	color: #afafaf;
+	text-decoration: none;
+	font-style: italic;
 }
 
 .footer_cop {
@@ -205,6 +211,7 @@ img {
 }
 
 .telNumb {
+	color: #fff;
 	padding-left: 15px;
 	text-decoration: none;
 }
@@ -213,3 +220,38 @@ img {
 	text-align: right;
 	padding-right: 15px;
 }
+
+.email {
+	color: #fff;
+}
+
+.slick-next,
+.slick-prev {
+    position: absolute;
+    top: 45%;
+    display: block;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    width: 64px;
+    height: 64px;
+    opacity: 0.5;
+    background: transparent;
+    z-index: 1;
+}
+
+.slick-next.slick-arrow {
+    background-image: url("../image/next.png");
+    right: 25px;
+}
+
+.slick-prev.slick-arrow {
+    background-image: url("../image/back.png");
+    left: 25px;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    opacity: 1;
+}"
